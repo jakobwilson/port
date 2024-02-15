@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    margin: 0;
+    background: #202731;
+    color: #eee;
+    font-family: prompt;
+}
+
+header {
+    position: relative;
+}
+
+img {
+    position: absolute;
+    scale: .5;
+    width: 100vw;
+    max-width: 100%;
+    margin-top: -260px;
+    margin-left: 200px;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    gap: 7em;
+    margin-top: 45px;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+    transition: 1s ease;
+}
+
+a:hover{
+    color: #555;
+}
+
+span {
+    padding: 10px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+.covalence {
+    font-weight: bold;
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 800px;
+    padding: 100px 20vw;
+}
+
+.name {
+    color: #dd3f31;
+}
+
+.title {
+    margin-top: -40px;
+    font-size: 32px;
+}
+
+.about {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+    margin-top: -20px;
+    margin-left: -800px;
+    font-size: 38px;
+}
+
+.link {
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -20px;
+}
+
+.git {
+    position: absolute;
+    margin-top: -21px;
+}
+
+.bio {
+    margin-top: 50px;
+    width: -880px;
+    max-width: 80%;
+    font-size: 16px;
+}
+
+.orange {
+    background-color: #dd3f31;
+}
+
+.exp {
+    color: #202731;
+    font-size: 42px;
+}
+
+.pro {
+    font-size: 42px;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 400px;
+}
+
+.wave .shape-fill {
+    fill: #DD3F31;
+}
+
+.wave2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.wave2 svg {
+    position: relative;
+    display: block;
+    width: calc(130% + 1.3px);
+    height: 215px;
+}
+
+.wave2 .shape-fill {
+    fill: #202731;
+}
+
+.about .name,
+.about .title {
+    opacity: 0;
+    transition: opacity 3s ease;
+}
+
+.about .name.fade-in,
+.about .title.fade-in {
+    opacity: 1;
+}
+
+.icon-container {
+    position: relative;
+    width: -100vw;
+    margin-top: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.icons {
+    justify-content: center;
+    display: inline-block;
+    width: 200%;
+}
+
+ .icon {
+    display: inline-block; 
+    margin-right: 20px; 
+    animation: scrollIcons 20s linear infinite;
+}
+
+/* @keyframes scrollIcons {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-1000%);
+    }
+}   */
+
+.bio {
+    width: 800px;
+    max-width: 80%;
+    font-size: 19px;
+    line-height: 2;
+}
+
+.grid {
+    position: relative;
+    width: 80vw;
+    height: 70vh;
+    border: 1px solid #DD3F31;
+}
+
+.box1 {
+    display: flex;
+    position: absolute;
+    height: 50%;
+    width: 50%;
+    border: 1px solid #eee;
+    margin-top: 30px;
+    margin-left: 20px;
+    align-items: center;
+    justify-content: center; 
+}
+
+.box1-img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.box2 {
+    position: absolute;
+    height: 50%;
+    width: 45%;
+    border: 1px solid #eee;
+    margin-top: 30px;
+    margin-left: 800px;
+    text-align: center;
+}
+
+.box3 {
+    position: absolute;
+    height: 25%;
+    width: 28%;
+    border: 1px solid #eee;
+    margin-top: 400px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.box4 {
+    position: absolute;
+    height: 25%;
+    width: 28%;
+    border: 1px solid #eee;
+    margin-top: 400px;
+    margin-left: 560px;
+    text-align: center;
+}
+
+.box5 {
+    position: absolute;
+    height: 25%;
+    width: 28%;
+    border: 1px solid #eee;
+    margin-top: 400px;
+    margin-left: 1030px;
+    text-align: center;
+}
