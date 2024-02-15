@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 body {
     margin: 0;
@@ -11,9 +11,9 @@ header {
     position: relative;
 }
 
-img {
+img.img {
     position: absolute;
-    scale: .5;
+    scale: 0.5;
     width: 100vw;
     max-width: 100%;
     margin-top: -260px;
@@ -35,7 +35,7 @@ a {
     transition: 1s ease;
 }
 
-a:hover{
+a:hover {
     color: #555;
 }
 
@@ -127,7 +127,7 @@ section {
 }
 
 .wave .shape-fill {
-    fill: #DD3F31;
+    fill: #dd3f31;
 }
 
 .wave2 {
@@ -175,9 +175,9 @@ section {
     width: 200%;
 }
 
- .icon {
-    display: inline-block; 
-    margin-right: 20px; 
+.icon {
+    display: inline-block;
+    margin-right: 20px;
     animation: scrollIcons 20s linear infinite;
 }
 
@@ -201,7 +201,7 @@ section {
     position: relative;
     width: 80vw;
     height: 70vh;
-    border: 1px solid #DD3F31;
+    border: 1px solid #dd3f31;
 }
 
 .box1 {
@@ -213,7 +213,7 @@ section {
     margin-top: 30px;
     margin-left: 20px;
     align-items: center;
-    justify-content: center; 
+    justify-content: center;
 }
 
 .box1-img {
@@ -261,4 +261,12 @@ section {
     margin-top: 400px;
     margin-left: 1030px;
     text-align: center;
+}
+
+.border-light {
+    border: 1px #ffffff solid;
+}
+
+.row > a > img:hover {
+    filter: blur(3px);
 }
