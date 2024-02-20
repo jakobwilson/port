@@ -16,8 +16,8 @@ img {
     scale: .5;
     width: 100vw;
     max-width: 100%;
-    margin-top: -260px;
-    margin-left: 200px;
+    top: -250px;
+    left: 1050px;
 }
 
 nav {
@@ -45,6 +45,7 @@ span {
 
 p {
     line-height: 1.5;
+    font-size: 18px;
 }
 
 .covalence {
@@ -76,17 +77,27 @@ section {
     margin-top: -20px;
     margin-left: -800px;
     font-size: 38px;
+    
 }
 
 .link {
     position: absolute;
-    margin-left: -50px;
+    margin-left: -100px;
     margin-top: -20px;
 }
 
 .git {
     position: absolute;
     margin-top: -21px;
+    margin-left: -27px;
+}
+
+.resume {
+    position: absolute;
+    margin-top: 199px;
+    margin-left: 130px;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 .bio {
@@ -197,68 +208,63 @@ section {
     line-height: 2;
 }
 
-.grid {
-    position: relative;
-    width: 80vw;
-    height: 70vh;
-    border: 1px solid #DD3F31;
-}
 
-.box1 {
-    display: flex;
-    position: absolute;
-    height: 50%;
-    width: 50%;
-    border: 1px solid #eee;
-    margin-top: 30px;
-    margin-left: 20px;
-    align-items: center;
-    justify-content: center; 
-}
 
-.box1-img {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
+@media screen and (max-width: 600px) {
+    header {
+        width: 10px;
+    }
 
-.box2 {
-    position: absolute;
-    height: 50%;
-    width: 45%;
-    border: 1px solid #eee;
-    margin-top: 30px;
-    margin-left: 800px;
-    text-align: center;
-}
+    body {
+      font-size: 14px; 
+      width: 450px;
+    }
 
-.box3 {
-    position: absolute;
-    height: 25%;
-    width: 28%;
-    border: 1px solid #eee;
-    margin-top: 400px;
-    margin-left: 80px;
-    text-align: center;
-}
+    .about {
+        margin: 0;
+    }
+    
+    .me {
+      display: none; 
+    }
+  
+    .wave {
+      display: none; 
+    }
 
-.box4 {
-    position: absolute;
-    height: 25%;
-    width: 28%;
-    border: 1px solid #eee;
-    margin-top: 400px;
-    margin-left: 560px;
-    text-align: center;
-}
+    .wave2 {
+        display: none;
+    }
 
-.box5 {
-    position: absolute;
-    height: 25%;
-    width: 28%;
-    border: 1px solid #eee;
-    margin-top: 400px;
-    margin-left: 1030px;
-    text-align: center;
-}
+  }
+  
+  
+  @media screen and (min-width: 600px) and (max-width: 900px) {
+   
+    .about {
+        margin: 0;
+    }
+
+    .exp {
+        margin-top: -100px;
+    }
+
+    .des {
+        margin-top: -40px;
+    }
+    
+    .me {
+      display: none; 
+    }
+  
+    .name {
+      font-size: 24px; 
+    }
+  
+    .bio {
+      font-size: 16px; 
+    }
+  }
+  
+
+  
