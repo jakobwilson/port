@@ -16,17 +16,6 @@ function scrollToSection(sectionId) {
 
 
 
-function handleScroll() {
-    var experienceSection = document.getElementById('experience');
-  
-    if (isInViewport(experienceSection)) {
-      experienceSection.classList.add('fade-in');
-    } else {
-      experienceSection.classList.remove('fade-in');
-    }
-  }
-  
 
-  window.addEventListener('scroll', handleScroll);
   
   

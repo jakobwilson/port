@@ -16,12 +16,12 @@ img {
     scale: .5;
     width: 100vw;
     max-width: 100%;
-    top: -250px;
+    top: -200px;
     left: 1050px;
 }
 
 nav {
-    position: relative;
+    position: absolute;
     display: flex;
     width: 100vw;
     justify-content: center;
@@ -208,63 +208,318 @@ section {
     line-height: 2;
 }
 
+.projects-container {
+    position: relative;
+    
+}
 
+.project {
+    position: absolute;
+    width: 100vw;
+    margin-left: -30px;
+    margin-top: 50px;
+}
 
-@media screen and (max-width: 600px) {
-    header {
-        width: 10px;
+.project-des {
+    position: absolute;
+    margin-left: -450px;
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        width: 100vw;
+        gap: 2em;
     }
 
     body {
-      font-size: 14px; 
-      width: 450px;
+      font-size: 16px; 
+      width: 100vw;
     }
 
     .about {
-        margin: 0;
+        position: relative;
+    }
+
+    .bio {
+        position: absolute;
+        width: 300px;
+        margin-left: 800px;
+        margin-top: 200px;
+        font-size: 16px;
     }
     
     .me {
       display: none; 
     }
-  
-    .wave {
-      display: none; 
+
+    .name {
+        position: absolute;
+        width: 300px;
+        margin-left: 835px;
+        font-size: 40px;
+        
     }
 
-    .wave2 {
-        display: none;
+    .title {
+        position: absolute;
+        width: 300px;
+        margin-left: 875px;
+        margin-top: 115px;
+        font-size: 20px;
     }
 
-  }
-  
-  
-  @media screen and (min-width: 600px) and (max-width: 900px) {
-   
-    .about {
-        margin: 0;
+    .link {
+        position: absolute;      
+        margin-left: 300px;
+        margin-top: 155px;
+    }
+
+    .git {
+        position: absolute;      
+        margin-left: 360px;
+        margin-top: 155px;
+    }
+
+    .resume {
+        position: absolute;      
+        margin-left: 900px;
+        margin-top: 155px;
+    }
+
+    .orange {
+        position: relative;
+    }
+
+    .des {
+        position: absolute;
+        margin-top: -20px;
+        width: 300px;
+        font-size: 16px;
     }
 
     .exp {
         margin-top: -100px;
     }
 
-    .des {
-        margin-top: -40px;
+    .icons {
+        width: 500px;
+        margin-top: 600px;
     }
+
     
-    .me {
-      display: none; 
+     @keyframes scrollIcons {
+    0% {
+        transform: translateX(0);
     }
+    100% {
+        transform: translateX(-700%);
+    }
+}   
   
-    .name {
-      font-size: 24px; 
+    .wave2 {
+        display: none;
     }
-  
-    .bio {
-      font-size: 16px; 
+
+    .projects-container {
+        position: relative;
+        height: 250px;
+        width: 300px;
     }
+
+    .project {
+        position: absolute;
+        width: 300px;
+        margin-left: 120px;
+    }
+
+    .project-des {
+        position: absolute;
+        margin-left: -100px;
+        width: 300px;
+    }
+
   }
   
-
   
+  @media (min-width: 500px) and (max-width: 1100px) and (min-height: 1000px) {
+    body {
+        font-size: 24px; 
+        width: 100vw;
+      }
+
+      .about {
+        position: relative;
+        width: 1420px;
+      }
+
+      .me {
+        
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 100px;
+      }
+
+     .name {
+        position: absolute;
+        margin-left: 750px;
+     }
+
+     .title {
+        position: absolute;
+        margin-left: 750px;
+        margin-top: 150px;
+     }
+
+     .bio {
+        position: absolute;
+        margin-left: 750px;
+        margin-top: 350px;
+        font-size: 28px;
+     }
+
+     .link {
+        position: absolute;
+        margin-left: 250px;
+        margin-top: 230px;
+     }
+
+     .git {
+        position: absolute;
+        margin-left: 350px;
+        margin-top: 230px;
+     }
+
+     .resume {
+        position: absolute;
+        margin-left: 950px;
+        margin-top: 230px;
+     }
+
+     
+
+  }
+
+@media (min-height: 800px) and (max-height: 599px) {
+    .about {
+        position: relative;
+    }
+
+    .me {
+        position: absolute;
+        margin-top: 100px;
+        margin-left: 100px;
+    }
+
+    .name {
+        position: absolute;
+        margin-left: 800px;
+    }
+
+    .title {
+        position: absolute;
+        margin-left: 800px;
+        margin-top: 130px;
+    }
+
+    .bio {
+        position: absolute;
+        margin-left: 800px;
+        margin-top: 330px;
+    }
+
+    .link {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 250px;
+    }
+
+    .git {
+        position: absolute;
+        margin-top: 200px;
+        margin-left: 380px;
+    }
+
+    .resume {
+        position: absolute;
+        margin-left: 1050px;
+    }
+
+    .orange {
+        position: relative;
+    }
+
+    .exp {
+        position: absolute;
+        margin-top: -100px;
+    }
+
+    .des {
+        position: absolute;
+        margin-left: 50px;
+        width: 780px;
+    }
+
+    .icons {
+        position: relative;
+        margin-top: 400px;
+    }
+  
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1420px) {
+    .me {
+        display: none; 
+      }
+
+    .about {
+        position: relative;
+    }
+
+    .bio {
+         
+            position: absolute;
+            width: 100vw;
+            max-width: 50%;
+            margin-left: 800px;
+            margin-top: 200px;
+            font-size: 20px;
+        
+    }
+
+    .name {
+         
+        position: absolute;
+        width: 100vw;
+        max-width: 50%;
+        margin-left: 1520px;
+        
+        font-size: 46px;    
+    }
+
+    .title {
+        position: absolute;
+        width: 100vw;
+        max-width: 50%;
+        margin-left: 1480px;       
+        font-size: 30px;
+        margin-top: 110px;
+    }
+
+    .link {
+        position: absolute;
+        margin-left: 240px;
+        margin-top: 160px;
+    }
+
+    .git {
+        position: absolute;
+        margin-left: 375px;
+        margin-top: 160px;
+    }
+
+    .resume {
+        position: absolute;
+        margin-left: 978px;
+        margin-top: 159px;
+    }
+}
