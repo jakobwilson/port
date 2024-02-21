@@ -33,16 +33,17 @@ nav {
 
 a {
     text-decoration: none;
-    color: #eee;
-    transition: 1s ease;
-}
-
-a:hover{
-    color: #555;
+    color: #EEE;
 }
 
 span {
+    cursor: pointer;
     padding: 10px;
+    transition: 1s ease;
+}
+
+span:hover{
+    color: #555;
 }
 
 .divider {
