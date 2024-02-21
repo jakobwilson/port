@@ -170,13 +170,24 @@ section {
 }
 
 .about .name,
-.about .title {
+.about .title,
+.about .me,
+.about a,
+.about .bio,
+.orange .exp,
+.orange .des,
+.orange .icons,
+.pro {
     opacity: 0;
     transition: opacity 3s ease;
 }
 
 .about .name.fade-in,
-.about .title.fade-in {
+.about .title.fade-in,
+.about .bio.fade-in,
+.about .me.fade-in,
+.about a.fade-in,
+.pro.fade-in {
     opacity: 1;
 }
 

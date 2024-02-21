@@ -1,12 +1,18 @@
 document.addEventListener('DOMContentLoaded', function() {
     const nameElement = document.querySelector('.about .name');
     const titleElement = document.querySelector('.about .title');
+    const bioElement = document.querySelector('.about .bio');
+    const meElement = document.querySelector('.about .me');
+    const proElement = document.querySelector('.pro');
     
 
     
     setTimeout(function() {
         nameElement.classList.add('fade-in');
         titleElement.classList.add('fade-in');
+        bioElement.classList.add('fade-in');
+        meElement.classList.add('fade-in');
+        proElement.classList.add('fade-in');
     }, 200); 
 });
 
